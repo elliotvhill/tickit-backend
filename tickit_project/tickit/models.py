@@ -12,8 +12,8 @@ class Venue(models.Model):
         return self.venue_name
 
 class Event(models.Model):
-    event_name =  models.CharField(max_length=100)
     venue_name = models.ForeignKey(Venue, on_delete=models.CASCADE, related_name='events')
+    event_name =  models.CharField(max_length=100)
     event_type = models.CharField(max_length=100)
     event_description = models.TextField(max_length=500)
     event_date = models.DateField()
