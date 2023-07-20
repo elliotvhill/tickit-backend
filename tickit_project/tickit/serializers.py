@@ -3,8 +3,7 @@ from .models import Event, Venue
 
 class EventSerializer(serializers.HyperlinkedModelSerializer):
     venue_name = serializers.HyperlinkedRelatedField(
-        view_name='venue_list',
-        many=True,
+        view_name='venue_detail',
         read_only=True
     )
     class Meta:
