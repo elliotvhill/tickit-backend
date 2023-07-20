@@ -103,7 +103,7 @@ DATABASES = {
         'USER': 'ykurnsfa',
         'PASSWORD': '9J1KaI96P-O19KMrWx5_8z5eIrYUm8G9',
         'HOST': 'stampy.db.elephantsql.com',
-        'PORT': '0.0.0.0'
+        'PORT': '5432'
     }
 }
 
